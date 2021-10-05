@@ -154,7 +154,7 @@ defmodule Phoenix.MixProject do
       Introduction: ~r/guides\/introduction\/.?/,
       Guides: ~r/guides\/[^\/]+\.md/,
       Authentication: ~r/guides\/authentication\/.?/,
-      Channels: ~r/guides\/channels\/.?/,
+      "Real-time": ~r/guides\/channels\/.?/,
       Testing: ~r/guides\/testing\/.?/,
       Deployment: ~r/guides\/deployment\/.?/,
       "How-to's": ~r/guides\/howto\/.?/
@@ -198,7 +198,7 @@ defmodule Phoenix.MixProject do
   defp aliases do
     [
       docs: ["docs", &generate_js_docs/1],
-      "assets.build": ["esbuild module", "esbuild cdn", "esbuild cdn_min"],
+      "assets.build": ["esbuild module", "esbuild cdn", "esbuild cdn_min", "esbuild main"],
       "assets.watch": "esbuild module --watch"
     ]
   end
